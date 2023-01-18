@@ -62,7 +62,7 @@ window.addEventListener('load', () => {
         if (input == result) {
             console.log("success")
         }
-        if (input !== result) {
+        if (input != result) {
             console.log("wrong")
         }
     }
