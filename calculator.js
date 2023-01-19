@@ -59,6 +59,10 @@ window.addEventListener('load', () => {
     }
 
     const isCalculationCorrect = (input, result) => {
+
+        // TODO: if success, change calculation
+        // TODO: add a 10sec timer
+
         if (input == result) {
             console.log("success")
         }

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(20, 20, 20);
+    display: grid;
+    place-items: center;
+    min-height: 95vh;
+}
+
+main {
+    
+}
+
+#calculationSection {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+#mathOperator {
+    margin: 0px 10px;
+}
+
+form input {
+    border-radius: 0px;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+}
+
+form input:focus {
+    outline: none;
+}
