@@ -9,10 +9,11 @@ window.addEventListener('load', () => {
     let mathOperatorSpan = document.querySelector('#mathOperator')
     
     let inputField = document.querySelector('#inputNumber')
+    let newCalcBtn = document.querySelector('#newCalculationBtn')
 
     const min = 1
     const max = 10
-    const operators = ["+", "-", "*", "/"]
+    const operators = ["+", "-", "*"]
 
     let result;
 
@@ -32,9 +33,6 @@ window.addEventListener('load', () => {
                 break
             case "*":
                 result = firstNumber * secondNumber
-                break;
-            case "/":
-                result = firstNumber / secondNumber
                 break;
             default:
                 break
@@ -71,6 +69,16 @@ window.addEventListener('load', () => {
         if (typeof inputValue === "number") {
             isCalculationCorrect(e.target.value, result)
         }
+    })
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key == " ") {
+            generateCalculation()
+        }
+    })
+
+    newCalcBtn.addEventListener("click", () => {
+        generateCalculation()
     })
 
     generateCalculation()
